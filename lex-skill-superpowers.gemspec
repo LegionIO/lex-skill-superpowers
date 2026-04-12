@@ -13,4 +13,5 @@ Gem::Specification.new do |spec|
   spec.files = Dir['lib/**/*', 'content/**/*']
 
   spec.add_dependency 'legion-llm', '>= 0.6'
+  spec.metadata['rubygems_mfa_required'] = 'true'
 end

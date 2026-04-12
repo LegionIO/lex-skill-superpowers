@@ -7,9 +7,9 @@ module Legion
   module Logging
     module Helper
       def log
-        @_log ||= Object.new.tap do |l|
+        @log ||= Object.new.tap do |l|
           %i[debug info warn error fatal].each do |m|
-            l.define_singleton_method(m) { |*| }
+            l.define_singleton_method(m) { |*| nil }
           end
         end
       end
@@ -25,7 +25,7 @@ module Legion
   end
 
   module Settings
-    @store = {}
+    @store = {}.freeze
 
     class << self
       def [](key)

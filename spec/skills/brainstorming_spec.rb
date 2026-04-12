@@ -18,7 +18,7 @@ RSpec.describe Lex::Skill::Superpowers::Skills::Brainstorming do
   it 'step methods are defined on the class' do
     described_class.steps.each do |step_name|
       expect(described_class.method_defined?(step_name)).to be(true),
-        "method #{step_name} not defined"
+                                                            "method #{step_name} not defined"
     end
   end
 end
