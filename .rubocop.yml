@@ -1,0 +1,33 @@
+inherit_gem:
+  rubocop-legion: config/lex.yml
+
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+
+Style/Documentation:
+  Enabled: false
+
+Legion/Extension/EveryActorRequiresTime:
+  Enabled: false
+
+Legion/Extension/RunnerReturnHash:
+  Enabled: false
+
+Legion/HelperMigration/DirectLogging:
+  Enabled: false
+
+Legion/HelperMigration/OldLoggingMethods:
+  Enabled: false
+
+Legion/HelperMigration/DirectJson:
+  Enabled: false
+
+Legion/HelperMigration/DirectLlm:
+  Enabled: false
+
+Legion/HelperMigration/DirectCache:
+  Enabled: false
+
+Legion/HelperMigration/DirectData:
+  Enabled: false
