@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-RSpec.describe Lex::Skill::Superpowers::Skills::Brainstorming do
+RSpec.describe Legion::Extensions::Skill::Superpowers::Skills::Brainstorming do
   it 'is registered in Legion::LLM::Skills::Registry' do
     expect(Legion::LLM::Skills::Registry.find('superpowers:brainstorming')).to eq(described_class)
   end

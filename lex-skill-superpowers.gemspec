@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative 'lib/lex/skill/superpowers/version'
+require_relative 'lib/legion/extensions/skill/superpowers/version'
 
 Gem::Specification.new do |spec|
   spec.name                  = 'lex-skill-superpowers'
-  spec.version               = Lex::Skill::Superpowers::VERSION
+  spec.version               = Legion::Extensions::Skill::Superpowers::VERSION
   spec.authors               = ['Matthew Iverson']
   spec.summary               = 'Superpowers skill set for Legion LLM'
   spec.license               = 'Apache-2.0'

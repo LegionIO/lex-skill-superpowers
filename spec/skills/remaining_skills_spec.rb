@@ -3,10 +3,10 @@
 require 'spec_helper'
 
 [
-  ['superpowers:test_driven_development', Lex::Skill::Superpowers::Skills::TestDrivenDevelopment],
-  ['superpowers:systematic_debugging',    Lex::Skill::Superpowers::Skills::SystematicDebugging],
-  ['superpowers:writing_plans',           Lex::Skill::Superpowers::Skills::WritingPlans],
-  ['superpowers:executing_plans',         Lex::Skill::Superpowers::Skills::ExecutingPlans]
+  ['superpowers:test_driven_development', Legion::Extensions::Skill::Superpowers::Skills::TestDrivenDevelopment],
+  ['superpowers:systematic_debugging',    Legion::Extensions::Skill::Superpowers::Skills::SystematicDebugging],
+  ['superpowers:writing_plans',           Legion::Extensions::Skill::Superpowers::Skills::WritingPlans],
+  ['superpowers:executing_plans',         Legion::Extensions::Skill::Superpowers::Skills::ExecutingPlans]
 ].each do |(skill_key, klass)|
   RSpec.describe klass do
     it "is registered as '#{skill_key}'" do
