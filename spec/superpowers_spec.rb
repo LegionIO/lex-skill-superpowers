@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-RSpec.describe Lex::Skill::Superpowers do
+RSpec.describe Legion::Extensions::Skill::Superpowers do
   it 'has a version number' do
     expect(described_class::VERSION).not_to be_nil
   end

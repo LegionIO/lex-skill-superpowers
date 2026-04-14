@@ -69,7 +69,7 @@ require 'legion/llm/skills/step_result'
 require 'legion/llm/skills/skill_run_result'
 require 'legion/llm/skills/base'
 require 'legion/llm/skills/registry'
-require 'lex/skill/superpowers'
+require 'legion/extensions/skill/superpowers'
 
 RSpec.configure do |config|
   config.disable_monkey_patching!
@@ -77,10 +77,10 @@ RSpec.configure do |config|
 
   config.before(:each) do
     Legion::LLM::Skills::Registry.reset!
-    Legion::LLM::Skills::Registry.register(Lex::Skill::Superpowers::Skills::Brainstorming)
-    Legion::LLM::Skills::Registry.register(Lex::Skill::Superpowers::Skills::TestDrivenDevelopment)
-    Legion::LLM::Skills::Registry.register(Lex::Skill::Superpowers::Skills::SystematicDebugging)
-    Legion::LLM::Skills::Registry.register(Lex::Skill::Superpowers::Skills::WritingPlans)
-    Legion::LLM::Skills::Registry.register(Lex::Skill::Superpowers::Skills::ExecutingPlans)
+    Legion::LLM::Skills::Registry.register(Legion::Extensions::Skill::Superpowers::Skills::Brainstorming)
+    Legion::LLM::Skills::Registry.register(Legion::Extensions::Skill::Superpowers::Skills::TestDrivenDevelopment)
+    Legion::LLM::Skills::Registry.register(Legion::Extensions::Skill::Superpowers::Skills::SystematicDebugging)
+    Legion::LLM::Skills::Registry.register(Legion::Extensions::Skill::Superpowers::Skills::WritingPlans)
+    Legion::LLM::Skills::Registry.register(Legion::Extensions::Skill::Superpowers::Skills::ExecutingPlans)
   end
 end

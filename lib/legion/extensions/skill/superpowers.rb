@@ -7,15 +7,17 @@ require_relative 'superpowers/skills/systematic_debugging'
 require_relative 'superpowers/skills/writing_plans'
 require_relative 'superpowers/skills/executing_plans'
 
-module Lex
-  module Skill
-    module Superpowers
-      def self.runner_modules
-        []
-      end
+module Legion
+  module Extensions
+    module Skill
+      module Superpowers
+        def self.runner_modules
+          []
+        end
 
-      def self.skills_required?
-        true
+        def self.skills_required?
+          true
+        end
       end
     end
   end
